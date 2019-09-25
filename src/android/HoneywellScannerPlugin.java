@@ -44,6 +44,8 @@ public class HoneywellScannerPlugin extends CordovaPlugin implements BarcodeRead
                                 BarcodeReader.PROPERTY_EAN_13_CHECK_DIGIT_TRANSMIT_ENABLED, true);
 						barcodeReader.setProperty(
                             BarcodeReader.PROPERTY_UPC_A_CHECK_DIGIT_TRANSMIT_ENABLED, true);
+                        barcodeReader.setProperty(
+                                BarcodeReader.PROPERTY_EAN_8_CHECK_DIGIT_TRANSMIT_ENABLED, true);
                     } catch (UnsupportedPropertyException e) {
                         e.printStackTrace();
                     }
